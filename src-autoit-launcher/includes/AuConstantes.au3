@@ -214,15 +214,15 @@ Func _OPEN_ADVANCED_MENU($iPath  = $__READ_EXE_ADVMENU, $wait=False)
 			Local $iRer = FileGetVersion($iPath,$FV_LEGALCOPYRIGHT )
 
 			If $CHECK_EXE Then
-				If $iVer = $___VERSION and $iGer = $___COMPANYNAME and $iRer = $___LEGALCOPYRIGHT Then
+;~ 				If $iVer = $___VERSION and $iGer = $___COMPANYNAME and $iRer = $___LEGALCOPYRIGHT Then
 					run($iPath & " " & $__SENHA_RUN, @ScriptDir, "open", @SW_SHOWMAXIMIZED)
-				Else
-					MostraMensa("O executavel selecionado não é compativel com o sistema" & @LF & _
-							"Por favor, use sempre os executaveis originais" & @LF & _
-							"Telefone: " & $__TELEF & @LF & _
-							$__FACE, 20000)
-							Exit
-				EndIf
+;~ 				Else
+;~ 					MostraMensa("O executavel selecionado não é compativel com o sistema" & @LF & _
+;~ 							"Por favor, use sempre os executaveis originais" & @LF & _
+;~ 							"Telefone: " & $__TELEF & @LF & _
+;~ 							$__FACE, 20000)
+;~ 							Exit
+;~ 				EndIf
 			Else
 				run($iPath & " " & $__SENHA_RUN, @ScriptDir, "open", @SW_SHOWMAXIMIZED)
 			EndIf
