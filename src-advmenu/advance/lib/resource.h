@@ -1,0 +1,7 @@
+#define IDI_ICONDEF 101
+#define IDB_SPLASH 102
+#define IDB_ALPHA 103
+#define IDB_ALPHA_MENU 104
+#define IDB_SPLASH_MENU 105
+#define IDB_CURSOR_MENU 106
+
